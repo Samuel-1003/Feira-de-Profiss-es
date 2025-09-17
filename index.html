@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-missões de Programação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Tela inicial -->
+        <div id="start-screen" class="screen">
+            <h1>🎮 Aventura de Programação!</h1>
+            <p>Escaneie o QR code ou clique em "Começar" para iniciar</p>
+            <button id="start-btn">Começar</button>
+        </div>
+
+        <!-- Tela de missões -->
+        <div id="mission-screen" class="screen hidden">
+            <h2 id="mission-title"></h2>
+            <div id="options"></div>
+            <button id="next-btn" class="hidden">Próxima Missão</button>
+        </div>
+
+        <!-- Tela final -->
+        <div id="end-screen" class="screen hidden">
+            <h1>🎉 Parabéns!</h1>
+            <p>Você completou todas as missões!</p>
+            <input type="email" id="email-input" placeholder="Digite seu e-mail">
+            <button id="send-email-btn">Receber Certificado</button>
+            <p id="email-feedback"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
